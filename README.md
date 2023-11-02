@@ -1,6 +1,6 @@
 # SDR-GB-SAR
 
-Opensource, openhardware implementation of a Software Defined Radio (SDR) Ground Based Synthetic-Aperture RADAR (GB-SAR)
+Opensource, openhardware implementation of a Software Defined Radio (SDR) Ground Based Synthetic-Aperture RADAR (GB-SAR [1])
 
 The instrument is a Ground-Based Synthetic-Aperture-RADAR using a commercial, off the shelf WiFi dongle as pseudo-random
 spectrum spread radiofrequency source, a Raspberry Pi 4 for data acquisition and antenna position control, and an Ettus
@@ -13,3 +13,10 @@ The radiofrequency signal source is an [Alfa Network AWUS036ACS](https://www.ama
 <img src=CAD/gbsar_cad1.png>
 
 <img src=CAD/gbsar_cad2.png>
+
+[1] Hoonyol Lee and Jihyun Moon, Analysis of a Bistatic Ground-Based Synthetic Aperture Radar 
+System and Indoor Experiments, MDPI Remote Sens. 2021, 13(1), 63; https://doi.org/10.3390/rs13010063 
+
+## Connections
+
+<img src="principle.png">
