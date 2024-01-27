@@ -71,6 +71,7 @@ for position=1:maxposition
          mes1(1:length(tmpmes1),(frequence-1)*2+repet)=tmpmes1;
          mes2(1:length(tmpmes2),(frequence-1)*2+repet)=tmpmes2;
       end
+      % printf("max_sur=%f max_ref=%f\n",max(mes1),max(mes2));
       if (repet==1)
         xindex((frequence-1)*2+repet)=((channelstart+(frequence-1)*2)*5+5000)-fs/2;
         send(sck,'+');  % sample center band
@@ -121,10 +122,10 @@ end  % position
 send(sck,'q');
 recv(sck,1)
 disconnect(sck)
+toc
 
 return
 
-toc
 figure
 subplot(211)
 plot(linspace(fmin,fmax,length(spectrum1)),abs(spectrum1))

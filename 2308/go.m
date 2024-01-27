@@ -3,8 +3,9 @@ close all
 
 npos=127  % number of antenna positions
 nt=1024;  % number of samples in the time domain
-nm=5;     % number of averages
+nm=9;     % number of averages
 fs = 5e6; % sampling frequency
+rangemax=nt;
 
 for position=1:npos
   load([num2str(position),'ltor.mat.gz']);
@@ -30,12 +31,12 @@ for position=1:npos
     end
   end
 end
-imagesc(abs(fftshift(fft(xco(1:700,:),127,2),2)),[0 200])
-imagesc(abs(fftshift(ifft(xco(1:700,:),127,2),2)),[0 2])
+imagesc(abs(fftshift(fft(xco(1:rangemax,:),127,2),2)),[0 200])
+imagesc(abs(fftshift(ifft(xco(1:rangemax,:),127,2),2)),[0 2])
 
 % this part below written by W. Feng (Xian, China)
 c=3e8
-Image_focused=fliplr((abs(fftshift(ifft(xco(1:700,:),127,2),2))));
+Image_focused=fliplr((abs(fftshift(ifft(xco(1:rangemax,:),127,2),2))));
 Na=size(Image_focused)(2);
 Nf=size(Image_focused)(1);
 lambda=c/fc
@@ -46,13 +47,14 @@ sigf = zeros(size(Image_focused)(1),size(Image_focused)(2));
 
 df=(fstop-fstart)/size(Image_focused)(1); % frequency step
 fs_r = 1/df;
-r = (0:700-1)*fs_r;
+r = (0:rangemax-1)*fs_r;
 
 fs_a = 1/dx; % 
 alpha = (0:Na-1)*fs_a/Na-fs_a/2;
 
 fs_r = 1/df;
 r = (0:Nf-1)*fs_r/Nf*c/2;
+rangemax=r(end)
 
 fs_a = 1/dx;
 alpha = (0:Na-1)*fs_a/Na-fs_a/2;
