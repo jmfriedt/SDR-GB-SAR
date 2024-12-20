@@ -20,3 +20,26 @@ System and Indoor Experiments, MDPI Remote Sens. 2021, 13(1), 63; https://doi.or
 ## Connections
 
 <img src="principle.png">
+
+## Cost estimate
+
+<table>
+  <tr><td>Ainfo 4.9 to 7.05 GHz horn antenna (20 dB gain) LB-159-20-C-SF</td><td> 807 euros/p x2</td></tr>
+  <tr><td>Ainfo mount bracket LB-159-10-C-MBL </td><td>202 euros/p</td></tr>
+  <tr><td>IAI rail RCP5-BA6-WA-42P-48-2000-P3-S-CJT </td><td>1965+395 (software) euros</td></tr>
+  <tr><td>B210 SDR </td><td>1854 euros (8 Feb. 2023)</td></tr>
+  <tr><td>Raspberry Pi + misc. hardware (e.g. 3.3V to 24V converter) </td><td>200 euros</td></tr>
+  <tr><td>MiniCircuits radiofrequency hardware (coupler ZADC-10-64, attenuators)</td><td> 72+~200</td></tr>
+  <tr><td>WiFi dongle </td><td>~30 euros</td></tr>
+  <tr><td>Total </td><td> 6734 euros</td></tr>
+</table>
+
+## Power consumption
+
+<table>
+  <tr><td>Motorized rail</td><td>500 mA/24V = 12 W</td></tr>
+  <tr><td>Raspberry Pi 4</td><td> 300 mA/5V = 1.5 W</td></tr>
+  <tr><td>B210 SDR</td><td> 210 mA/12V=2.5 W</td></tr>
+  <tr><td>WiFi dongle (USB standard)</td><td> $<$500 mA/5V=2.5W</td></tr>
+  <tr><td>Total</td><td> 18.5 W
+</table>
