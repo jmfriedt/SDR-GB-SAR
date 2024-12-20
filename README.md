@@ -25,7 +25,7 @@ System and Indoor Experiments, MDPI Remote Sens. 2021, 13(1), 63; https://doi.or
 
 <table>
   <tr><td>Ainfo 4.9 to 7.05 GHz horn antenna (20 dB gain) LB-159-20-C-SF</td><td> 807 euros/p x2</td></tr>
-  <tr><td>Ainfo mount bracket LB-159-10-C-MBL </td><td>202 euros/p</td></tr>
+  <tr><td>Ainfo mount bracket LB-159-10-C-MBL </td><td>202 euros/p x2</td></tr>
   <tr><td>IAI rail RCP5-BA6-WA-42P-48-2000-P3-S-CJT </td><td>1965+395 (software) euros</td></tr>
   <tr><td>B210 SDR </td><td>1854 euros (8 Feb. 2023)</td></tr>
   <tr><td>Raspberry Pi + misc. hardware (e.g. 3.3V to 24V converter) </td><td>200 euros</td></tr>
