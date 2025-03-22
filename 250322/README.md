@@ -46,8 +46,7 @@ root@192.168.77.168's password: root
 ```
 despite the ``root`` password not being echoed.
 
-<img src="2025-03-22-125940_2704x1050_scrot.png">  
-<img src="2025-03-22-125945_2704x1050_scrot.png">
+<img src="2025-03-22-125940_2704x1050_scrot.png"> <img src="2025-03-22-125945_2704x1050_scrot.png">
 
 On the Raspberry Pi:
 ```
@@ -92,8 +91,7 @@ the safety signal. When powered, the position of the antenna should only be cont
 by the Raspberry Pi and manual motion of the antenna should **not** be possible (if 
 manually moving the antennas is possible, the safety signal has been disconnected).
 
-<img src="IMG_20250322_122006_944small.jpg" width=320>
-<img src="IMG_20250322_122033_869small.jpg" width=320>
+<img src="IMG_20250322_122006_944small.jpg" width=320> <img src="IMG_20250322_122033_869small.jpg" width=320>
 
 It is probably safe to bring a soldering iron on the field when setting up the GB-SAR
 in case one of the cables was broken during travel.
@@ -200,9 +198,7 @@ recording had to be restarted. Files named ``1ltor.mat``, ``2ltor.mat`` and so
 on will be created in the recording directory. The antenna will be moving once
 every 7-seconds with 1/4 wavelength steps (1.3 cm at 5800 MHz)
 
-<img src="IMG_20250322_123812_367small.jpg" width=320>
-<img src="IMG_20250322_124453_943small.jpg" width=320>
-<img src="IMG_20250322_124528_648small.jpg" width=320>
+<img src="IMG_20250322_123812_367small.jpg" width=320> <img src="IMG_20250322_124453_943small.jpg" width=320> <img src="IMG_20250322_124528_648small.jpg" width=320>
 
 At the end of the acquisition, the Raspberry Pi program quits with
 ```
@@ -239,9 +235,7 @@ overwrite the recorded files.
 Once the acquisition is completed, process with ``octave -q go.m`` or, to interact with
 the resulting image, run ``go`` from an ``octave`` terminal.
 
-<img src="Layout1.png width=320>
-<img src="Layout2.png width=320>
-<img src="Layout3.png width=320>
+<img src="Layout1.png" width=320> <img src="Layout2.png" width=320> <img src="Layout3.png" width=320>
 
 Here data were collected three times and the maps are compared, with a nearby (230 m range)
 building clearly visible in all data processing, and a nearby (130 m range) excavator 
