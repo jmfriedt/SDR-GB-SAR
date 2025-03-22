@@ -202,7 +202,7 @@ every 7-seconds with 1/4 wavelength steps (1.5 cm at 5000 MHz)
 
 <img src="IMG_20250322_123812_367small.jpg" width=320> <img src="IMG_20250322_124453_943small.jpg" width=320> <img src="IMG_20250322_124528_648small.jpg" width=320>
 
-At the end of the acquisition, the Raspberry Pi program quits with
+At the end of the acquisition, the Raspberry Pi program completes with
 ```
 b'+'
 b'u'
@@ -213,7 +213,7 @@ moving right
 b'q'
 Bye
 ```
-and the GNU Octave script with
+and the GNU Octave script quits with
 ```
 DATA LOST
 DATA LOST
