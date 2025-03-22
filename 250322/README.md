@@ -4,7 +4,7 @@ Securely attach the GB-SAR to whatever setup was designed, here the rail of the
 emergency stairs. The bolts are fitted to avoid any risk of the rail from tilting
 while the antennas are scanning along the azimuth direction:
 
-<img src="IMG_20250322_115104_204small.jpg" width=320><img src="IMG_20250322_115116_284small.jpg" width=320><img src="IMG_20250322_115218_281small.jpg" width=320>
+<img src="IMG_20250322_115104_204small.jpg" width=320> <img src="IMG_20250322_115116_284small.jpg" width=320> <img src="IMG_20250322_115218_281small.jpg" width=320>
 
 When handling the rail **avoid touching the thin metallic sheet** holding the actuator,
 which is documented by the manufacturer as **very fragile**.
@@ -16,9 +16,7 @@ other keeps the rail in place.
 Setup the power: check 24-V power supply and connect the black cable to GND
 and red to power: the power supply should be able to deliver at least 1-A at 24-V:
 
-<img src="IMG_20250322_115839_323small.jpg" width=320>
-<img src="IMG_20250322_120034_148small.jpg" width=320>
-<img src="IMG_20250322_120058_218small.jpg" width=320>
+<img src="IMG_20250322_115839_323small.jpg" width=320> <img src="IMG_20250322_120034_148small.jpg" width=320> <img src="IMG_20250322_120058_218small.jpg" width=320>
 
 Connect the Ethernet cable from GB-SAR to the laptop. The GB-SAR is autonomous but expects
 an external control computer (later called "laptop"), preferably running GNU/Linux with
