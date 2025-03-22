@@ -1,0 +1,8 @@
+# wireless tools de Buildroot
+# https://sandilands.info/sgordon/capturing-wifi-in-monitor-mode-with-iw
+
+modprobe cfg80211
+insmod 88XXau.ko       # get on github, not in the mainline kernel
+ifconfig wlp1s0u1u2 up
+./monitor.sh
+./packetspammer.arm wlp1s0u1u2 -n 1000000 -r 300 -s 1450
