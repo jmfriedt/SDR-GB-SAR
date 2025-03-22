@@ -4,9 +4,9 @@ Securely attach the GB-SAR to whatever setup was designed, here the rail of the
 emergency stairs. The bolts are fitted to avoid any risk of the rail from tilting
 while the antennas are scanning along the azimuth direction:
 
-<img src="IMG_20250322_115104_204small.jpg width=320">
-<img src="IMG_20250322_115116_284small.jpg width=320">
-<img src="IMG_20250322_115218_281small.jpg width=320">
+<img src="IMG_20250322_115104_204small.jpg" width=320">
+<img src="IMG_20250322_115116_284small.jpg" width=320">
+<img src="IMG_20250322_115218_281small.jpg" width=320">
 
 When handling the rail **avoid touching the thin metallic sheet** holding the actuator,
 which is documented by the manufacturer as **very fragile**.
@@ -18,9 +18,9 @@ other keeps the rail in place.
 Setup the power: check 24-V power supply and connect the black cable to GND
 and red to power: the power supply should be able to deliver at least 1-A at 24-V:
 
-<img src="IMG_20250322_115839_323small.jpg width=320">
-<img src="IMG_20250322_120034_148small.jpg width=320">
-<img src="IMG_20250322_120058_218small.jpg width=320">
+<img src="IMG_20250322_115839_323small.jpg" width=320">
+<img src="IMG_20250322_120034_148small.jpg" width=320">
+<img src="IMG_20250322_120058_218small.jpg" width=320">
 
 Connect the Ethernet cable from GB-SAR to the laptop. The GB-SAR is autonomous but expects
 an external control computer (later called "laptop"), preferably running GNU/Linux with
@@ -28,7 +28,7 @@ GNU Octave installed for data collection and processing. The Raspberry Pi could 
 handle acquisition and processing as well but we selected a distributed architecture in this
 setup.
 
-<img src="IMG_20250322_120323_817small.jpg width=320">
+<img src="IMG_20250322_120323_817small.jpg" width=320">
 
 On the laptop:
 ```bash
@@ -96,15 +96,15 @@ the safety signal. When powered, the position of the antenna should only be cont
 by the Raspberry Pi and manual motion of the antenna should **not** be possible (if 
 manually moving the antennas is possible, the safety signal has been disconnected).
 
-<img src="IMG_20250322_122006_944small.jpg width=320">
-<img src="IMG_20250322_122033_869small.jpg width=320">
+<img src="IMG_20250322_122006_944small.jpg" width=320">
+<img src="IMG_20250322_122033_869small.jpg" width=320">
 
 It is probably safe to bring a soldering iron on the field when setting up the GB-SAR
 in case one of the cables was broken during travel.
 
 Once the antenna is on the left most position 
 
-<img src="IMG_20250322_122229_786small.jpg width=320">
+<img src="IMG_20250322_122229_786small.jpg" width=320">
 
 and checking on the first terminal
 (``ctrl-a a``) that the WiFi signal is still being broadcast (incrementing "000000" 
@@ -204,9 +204,9 @@ recording had to be restarted. Files named ``1ltor.mat``, ``2ltor.mat`` and so
 on will be created in the recording directory. The antenna will be moving once
 every 7-seconds with 1/4 wavelength steps (1.3 cm at 5800 MHz)
 
-<img src="IMG_20250322_123812_367small.jpg width=320">
-<img src="IMG_20250322_124453_943small.jpg width=320">
-<img src="IMG_20250322_124528_648small.jpg width=320">
+<img src="IMG_20250322_123812_367small.jpg" width=320">
+<img src="IMG_20250322_124453_943small.jpg" width=320">
+<img src="IMG_20250322_124528_648small.jpg" width=320">
 
 At the end of the acquisition, the Raspberry Pi program quits with
 ```
@@ -230,7 +230,7 @@ Elapsed time is 865.501 seconds.
 ```
 and the antennas return to their rest position at the middle of the rail.
 
-<img src="IMG_20250322_124907_589small.jpg width=320">
+<img src="IMG_20250322_124907_589small.jpg" width=320">
 
 The Python script running on the Raspberry Pi is waiting for a new
 acquisition to start: launching again ``octave -q zeromq_left_to_right.m`` on the laptop will start a new acquisition, moving the antennas to
@@ -238,7 +238,7 @@ the left-most position a recording new datasets. Make sure to save
 the previous record in a sub-director since the new acquisition will
 overwrite the recorded files.
 
-<img src="IMG_20250322_133002_500small.jpg width=320">
+<img src="IMG_20250322_133002_500small.jpg" width=320">
 
 Once the acquisition is completed, process with ``octave -q go.m`` or, to interact with
 the resulting image, run ``go`` from an ``octave`` terminal.
