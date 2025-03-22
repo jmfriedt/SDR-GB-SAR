@@ -144,7 +144,7 @@ DD
 and stop displaying any additional message (the Overflows O and DD might or might 
 not occur).
 
-Then on the laptop where GNU octave and its dependencies are installed
+Then on the laptop where GNU Octave and its dependencies are installed
 ```
 sudo apt install octave octave-sockets octave-signal octave-zeromq
 ```
@@ -152,7 +152,7 @@ from a location with enough disk space, since about 1 GB will be used for each
 acquisition:
 
 ```
-octave -q
+octave -q zeromq_left_to_right.m
 ```
 and the Raspberry Pi4 must start displaying
 ```
