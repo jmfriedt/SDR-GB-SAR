@@ -148,7 +148,7 @@ Then on the laptop where GNU octave and its dependencies are installed
 ```
 sudo apt install octave octave-sockets octave-signal octave-zeromq
 ```
-from a location with enough disk space, about 1 GB will be used for each
+from a location with enough disk space, since about 1 GB will be used for each
 acquisition:
 
 ```
@@ -194,9 +194,11 @@ DATA LOST
 ```
 
 The message ``DATA LOST`` only means some WiFi emission was insufficient and the
-recording had to be restarted. Files named ``1ltor.mat``, ``2ltor.mat`` and so
+recording had to be restarted. 
+
+Files named ``1ltor.mat``, ``2ltor.mat`` and so
 on will be created in the recording directory. The antenna will be moving once
-every 7-seconds with 1/4 wavelength steps (1.3 cm at 5800 MHz)
+every 7-seconds with 1/4 wavelength steps (1.5 cm at 5000 MHz)
 
 <img src="IMG_20250322_123812_367small.jpg" width=320> <img src="IMG_20250322_124453_943small.jpg" width=320> <img src="IMG_20250322_124528_648small.jpg" width=320>
 
