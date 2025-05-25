@@ -71,7 +71,7 @@ DSI removal before stacking
 
 DSI removal after stacking
 
-<img src="with_dsi_removalafterstacking.png">
+<img src="with_dsi_removal_afterstacking.png">
 
 demonstrating clearly how the "echo" around range 480 m is an artefact of the
 WiFi signal structure and not a target.
