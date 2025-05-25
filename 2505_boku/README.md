@@ -1,13 +1,13 @@
 ## Direct Signal Interference (DSI) removal
 
 Since the two horn antennas are close to each other and some radiated
-electromagnetic from the reference antenna will leak to the surveillance
+electromagnetic signal from the reference antenna will leak to the surveillance
 antenna, removing this direct interference signal is desirable to 
 improve signal to noise ratio and remove signal features unrelated to
 targets but introduced by the WiFi signal structure (as seen on the
 ambiguity function).
 
-Direct Signal Interference (DSI) removal involved indentifying time
+Direct Signal Interference (DSI) removal involves indentifying time
 delayed copies of the reference signal in the surveillance signal and
 cancelling this unwanted contribution by finding the appropriate weights.
 The least square optimal solution is found (see ``simu_dsi.m`` for a synthetic
