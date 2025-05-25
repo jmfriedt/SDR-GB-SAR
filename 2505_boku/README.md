@@ -10,7 +10,8 @@ ambiguity function).
 Direct Signal Interference (DSI) removal involved indentifying time
 delayed copies of the reference signal in the surveillance signal and
 cancelling this unwanted contribution by finding the appropriate weights.
-The least square optimal solution is found by
+The least square optimal solution is found (see ``simu_dsi.m`` for a synthetic
+example demonstrating these concepts) by
 * creating a matrix ``mat`` with the time delayed copies of the reference 
 signal ``ref``, in the future and in the past for safety when mixing reference 
 and surveillance channels (as we did when naming the variables in the ``godsi.m``
