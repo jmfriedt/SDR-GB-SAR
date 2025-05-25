@@ -75,3 +75,16 @@ DSI removal after stacking
 
 demonstrating clearly how the "echo" around range 480 m is an artefact of the
 WiFi signal structure and not a target.
+
+Notice that in the script, the reference ``ref`` and surveillance ``sur`` were
+mixed since applying DSI removal to the original reference and surveillance order
+led to the dupplication of the strong target around 100 m range, indicating the
+erroneous attribution of the channels. Hence
+```Matlab
+reft=dsi(surt,reft,Ndsi);
+```
+should be
+```Matlab
+surt=dsi(reft,surt,Ndsi);
+```
+had the channels not been mixed.
